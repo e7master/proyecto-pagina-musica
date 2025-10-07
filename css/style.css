@@ -1,0 +1,427 @@
+/*Comentario de css*/
+
+/*etiquetas*/
+
+/*clases*/
+/*Paleta
+    #0A400C
+    #819067
+    #B1AB86
+    #FEFAE0*/
+
+/*1rem = 16px*/
+/*html{
+    font-size: 100%;
+}*/
+
+/*nav*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/*parrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap');
+/*li titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------------*/
+
+/*Header*/
+
+/*header{
+    display: flex;
+    background-color: #1a1919;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+*//*
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    height: 100%;
+    margin-right: 15px;
+}*/
+/*.padreFlex{
+    background-color: orangered;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hijoFlex{
+    width: 80px;
+    height: 50px;
+    border: solid black 3px;
+    background-color: aqua;
+}
+*/
+
+.logo{
+    /*ancho*/
+    width: 100px;
+    /*alto*/
+    height: 90px;
+    margin: 5px;
+}
+
+.fondo-nav{
+    background-color: #020202;
+}
+
+.fondo-nav a{
+    color:rgb(209, 208, 208);
+}
+
+.fondo-nav a:hover{
+    color: #c1b70b;
+}
+
+/*nav a{
+    text-decoration: none;
+    color: 
+    font-size: 1rem;
+    font-family: "Bungee", sans-serif;
+    width: 30%;
+}
+*/
+/*contacto*/
+.imagenH{
+    width: 100px;
+    height: 100px;
+}
+
+/*------------------------------------*/
+
+/*Index main*/
+
+/*.unidades{
+    height: 600px;
+    background-color: aqua;
+}
+*/
+/*.pixel{
+    height: 200px;
+    background-color: bisque;
+}
+
+.porcentaje{
+    height: 200px;
+    background-color: #dac958;
+}
+
+.view{
+    background-color: red;
+    height: 50vh;
+    width: 50vw;
+}*/
+
+h1{
+    color:#9d9876 ;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.banner{
+    text-align: center;
+    background-image: url(../medios/Banner.jpeg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: #020202 1px 1px 8px;
+    height: 20vh;
+    padding-top: 35px;
+}
+
+.titulo{
+    color: #c1b70b;
+}
+
+/*-------------------------------------------------*/
+
+/*Main*/
+
+.problematico{
+    border: darkviolet 3px solid;
+    padding: 10px 20px 30px 40px;
+    /*arriba - derecha- abajo- izquierda o poner dos y seria arr-aba der-iz*/
+}
+
+.textoColorh2{
+    color: rgb(91, 114, 58);
+    font-size: 35px;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.textocolorh3{
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.textoUno{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.titulop{
+    font-family: "Manrope", sans-serif;
+    font-weight: 650;
+    text-decoration:underline
+}
+
+.lititulo{
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.licuerpo{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.mapauno{
+    width: 500px;
+    height: 400px;
+}
+
+.mapados{
+    width: 350px;
+    height: 335px;
+}   
+
+.imagenUno{
+    height: auto;
+    width: 500px;
+}
+
+.imagenDos{
+    height: 335px;
+    width: 560px;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/*----------------------------------*/
+
+/*Artistas*/
+.imagenA{
+    height: 300px;
+    width: 420px;
+}
+.imagenB{
+    height: 350px;
+    width: 300px;
+}
+
+.imagenC{
+    height: 350px;
+    width: 390px;
+}
+
+.licuerpo1{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: "Chocolate Classical Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/*.contenedor-grid img{
+    width: 100%;
+    height: 100%;
+}*/
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "tituloG tituloG tituloG" /*titulo principal*/
+    "tit     tit     tit" /*artista*/
+    "imagenA texto1  texto1" /*imagen y descripcion de artista*/
+    "imagenA texto1  texto1" /*lo mismo que arriba*/
+    "titifr ifr     redes " /*titulo y el iframe del disco en spotify*/
+    ;
+    grid-template-columns: 25% 35% 37%;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.h1tit{
+    grid-area: tituloG;
+}
+
+.licuerpo1{
+    grid-area: tit;
+}
+
+.imagenA{
+    grid-area: imagenA;
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.textoUno{
+    grid-area: texto1;
+    padding: 0 10px;
+}
+
+.titlifr{
+    grid-area: titifr;
+    align-self: center;
+}
+.ifr{
+    grid-area: ifr;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin-top: 8px 0;
+}
+.redes img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    transition: transform .15s;
+}
+
+.redes a img:hover{
+    transform: scale(1.08);
+}
+
+/*----------------------------------------*/
+
+/*footer All*/
+footer{
+    background-color: #020202;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.pfooter{
+    color: white;
+}
+
+.imagenfooter0{
+    width: 40px;
+    height: auto;
+
+}
+
+.imagenfooter1{
+    width: 40px;
+    height: auto;
+}
+
+.imagenfooter2{
+    width: 40px;
+    height: auto;
+}
+
+.flotar{
+    width: 40px;
+    height: auto;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
+
+.comentario{
+    width: 600px;
+    height: 200px;
+}
+
+/*------------------------------------*/
+/*Responsive*/
+/*Mobile*/
+/*
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    header img {
+        width: 50px;
+    }
+
+    nav{
+        width: 90%;
+    }
+
+    header ul{
+        margin-right: 0px;
+    }
+
+    .contenedor-grid{
+        grid-template-areas: 
+        "tituloG"
+        "tit"
+        "imagenA"
+        "texto1"
+        "titifr"
+        "ifr"
+        "redes";
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(80px, auto);
+        margin: 0px 5px;
+        gap: 10px;
+    }
+}
+*/
+
+/*Grillas de Bootstrap*/
+
+
+
+
