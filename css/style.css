@@ -199,12 +199,6 @@ h3{
 
 /*Main*/
 
-.problematico{
-    border: darkviolet 3px solid;
-    padding: 10px 20px 30px 40px;
-    /*arriba - derecha- abajo- izquierda o poner dos y seria arr-aba der-iz*/
-}
-
 .textoColorh2{
     color: rgb(91, 114, 58);
     font-size: 35px;
@@ -285,18 +279,11 @@ p{
 /*----------------------------------*/
 
 /*Artistas*/
-.imagenA{
-    height: 300px;
-    width: 420px;
-}
-.imagenB{
-    height: 350px;
-    width: 300px;
-}
-
-.imagenC{
-    height: 350px;
-    width: 390px;
+.imagenA, .imagenB, .imagenC{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .licuerpo1{
@@ -337,15 +324,6 @@ p{
     grid-area: tit;
 }
 
-.imagenA{
-    grid-area: imagenA;
-    width: 100%;
-    height: auto;
-    max-width: 420px;
-    max-height: 350px;
-    object-fit: cover;
-}
-
 .textoUno{
     grid-area: texto1;
     padding: 0 10px;
@@ -379,6 +357,58 @@ p{
     transform: scale(1.08);
 }
 
+main .row{
+    align-items: flex-start;
+}
+
+.tarjeta{
+    border: none;
+    background-color: #f6f7de;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo{
+    padding: 10px;
+}
+
+.card iframe{
+    height: 130px;
+}
+
+.titulo-tarj{
+    color: #0A400C;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+}
+
+.texto-tarj{
+    text-align: justify;
+    color: #000;
+    font-family: "Chocolate Classical Sans", sans-serif;
+}
+
+.card iframe{
+    border-radius: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 /*----------------------------------------*/
 
 /*footer All*/
@@ -402,8 +432,8 @@ footer{
 }
 
 .imagenfooter1{
-    width: 40px;
-    height: auto;
+    width: 45px;
+    height: 45px;
 }
 
 .imagenfooter2{
@@ -428,38 +458,7 @@ footer{
 /*Responsive*/
 /*Mobile*/
 /*
-@media (max-width:768px){
-    header{
-        flex-direction: column;
-    }
-    header img {
-        width: 50px;
-    }
 
-    nav{
-        width: 90%;
-    }
-
-    header ul{
-        margin-right: 0px;
-    }
-
-    .contenedor-grid{
-        grid-template-areas: 
-        "tituloG"
-        "tit"
-        "imagenA"
-        "texto1"
-        "titifr"
-        "ifr"
-        "redes";
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(80px, auto);
-        margin: 0px 5px;
-        gap: 10px;
-    }
-}
-*/
 
 /*Grillas de Bootstrap*/
 
