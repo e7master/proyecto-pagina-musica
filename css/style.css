@@ -381,9 +381,11 @@ main .row{
 }
 
 .titulo-tarj{
-    color: #0A400C;
+    color: #899e1e;
     font-family: "Manrope", sans-serif;
     text-align: center;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .texto-tarj{
