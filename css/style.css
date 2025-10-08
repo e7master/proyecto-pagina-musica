@@ -456,14 +456,10 @@ footer{
     height: 200px;
 }
 
-/*------------------------------------*/
-/*Responsive*/
-/*Mobile*/
-/*
-
-
-/*Grillas de Bootstrap*/
-
-
-
+.coming{
+    align-content: center;
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+}
 
