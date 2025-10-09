@@ -27,6 +27,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /*----------------------------------*/
 
 /*Header*/
@@ -452,8 +457,8 @@ footer{
 }
 
 .comentario{
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
 }
 
 .coming{
