@@ -355,8 +355,7 @@ main .row{
 .tarjeta{
     border: none;
     background-color: #f6f7de;
-    height: auto !important;
-    min-height: 0 !important;
+    min-height: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
     display: flex;
@@ -443,6 +442,10 @@ button:hover{
     background-color: #535353;
 }
 
+.fondo-contacto{
+    background-color: #e8e6dd;
+    border: 1px solid #000000;
+}
 
 /*----------------------------------------*/
 

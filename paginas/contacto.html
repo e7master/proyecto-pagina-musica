@@ -40,25 +40,36 @@
             </div>
         </nav>    
     </header>
-    <main>
-        <h1>¡Nos importa tu opinion!</h1>
-        <form action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
-            
-            <label for="telefono">Numero telefonico:</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="+54 9 2964 123456">
-            
-            <label for="correo">Correo Electronico</label>
-            <input type="email" name="correo" id="correo" placeholder="ejemplo@mail.com" required>
-            
-            <label for="comentario">Comentanos que artistas o que tipo de musica nos recomendas para agreagar en nuestro sitio</label>
-            <textarea name="comentario" id="comentario" rows="5" placeholder="Escribi tu mensaje aca..." required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 fondo-contacto p-4 rounded shadow">
+                <h1 class="text-center mb-4">¡Nos importa tu opinion!</h1>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono">Numero telefonico:</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="+54 9 2964 123456">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo">Correo Electronico:</label>
+                        <input type="email" name="correo" id="correo" placeholder="ejemplo@mail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario">Comentanos que artistas o que tipo de musica nos recomendas para agreagar en nuestro sitio:</label>
+                        <textarea name="comentario" id="comentario" rows="5" placeholder="Escribi tu mensaje aca..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+
     <footer>
         <p class="pfooter">NUESTRAS REDES SOCIALES</p>
         <a href="https://www.instagram.com/"><img class="imagenfooter0" src="../medios/insta-negro.png" alt=""></a>
