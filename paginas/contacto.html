@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio dedicado al rap argentino, artistas y contacto.">
     <title>Document</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
@@ -16,7 +17,7 @@
     <!--logo-->
         <nav class="navbar navbar-expand-lg fondo-nav navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../pagina1/contacto.html"><img class="logo" src="../medios/telefono negro.jpeg"  alt=""></a>
+                <a class="navbar-brand" href="../paginas/contacto.html"><img class="logo" src="../medios/telefono-negro.jpeg"  alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,7 +27,7 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./Artistas.html">Artistas</a>
+                            <a class="nav-link" href="./artistas.html">Artistas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contactanos</a>
@@ -40,28 +41,28 @@
         </nav>    
     </header>
     <main>
-        <h2>¡Dejanos tus datos para recibir mas data rapera!</h2>
+        <h2>¡Nos importa tu opinion!</h2>
         <form action="">
-            <label for="">Nombre y apellido</label>
-            <input type="text" name="" id="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
             
-            <label for="">Numero telefonico</label>
-            <input type="number" name="" id="">
+            <label for="telefono">Numero telefonico:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="+54 9 2964 123456">
             
-            <label for="">Correo Electronico</label>
-            <input type="email" name="" id="">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" name="correo" id="correo" placeholder="ejemplo@mail.com" required>
             
-            <p>Por ultimo... Contanos que artistas o que tipo de musica nos recomendas para agreagar en nuestro sitio</p>
-            <textarea class="comentario" name="" id=""></textarea>
+            <label for="comentario">Comentanos que artistas o que tipo de musica nos recomendas para agreagar en nuestro sitio</label>
+            <textarea name="comentario" id="comentario" rows="5" placeholder="Escribi tu mensaje aca..." required></textarea>
 
-            <input type="submit" value="Enviar">
+            <button type="submit">Enviar</button>
         </form>
 
     </main>
     <footer>
         <p class="pfooter">NUESTRAS REDES SOCIALES</p>
-        <a href="https://www.instagram.com/"><img class="imagenfooter0" src="../medios/insta negro.png" alt=""></a>
-        <a href="https://www.whatsapp.com/?lang=es_LA"><img class="imagenfooter1" src="../medios/wpp negro.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img class="imagenfooter0" src="../medios/insta-negro.png" alt=""></a>
+        <a href="https://www.whatsapp.com/?lang=es_LA"><img class="imagenfooter1" src="../medios/wpp-negro.png" alt=""></a>
         <a href="https://open.spotify.com/intl-es"><img class="imagenfooter2" src="../medios/spotify.jpg" alt=""></a>
     </footer>
     <!--Js Bs-->
