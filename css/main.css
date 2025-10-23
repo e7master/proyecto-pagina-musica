@@ -263,6 +263,8 @@ form button:hover {
   border: 1px solid #000;
 }
 
+/*comentario css*/
+/*solo @use*/
 footer {
   background-color: #020202;
   padding: 30px;
@@ -283,6 +285,75 @@ footer img {
 }
 footer img:hover {
   transition: rotate(10deg) scale(1.1);
+}
+
+.tabla-comparativa {
+  max-width: 800px;
+  margin: 30px auto;
+  border: 1px solid #0a0a0a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tabla-comparativa h4 {
+  margin: 0;
+  padding: 1rem;
+  background-color: rgb(188.7894736842, 177.1052631579, 99.2105263158);
+  color: #000;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.fila-tabla {
+  display: flex;
+  border-bottom: 1px solid #000000;
+}
+.fila-tabla:last-child {
+  border-bottom: none;
+}
+
+.columna-tabla {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #080808;
+}
+.columna-tabla:last-child {
+  border-right: none;
+}
+
+.titulo-columna {
+  background-color: rgb(211.6052631579, 203.9473684211, 152.8947368421);
+  font-weight: bold;
+  color: #333;
+}
+
+.historias-fases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.historias-fases .fase {
+  padding: 20px;
+  border: 1px solid rgb(188.7894736842, 177.1052631579, 99.2105263158);
+  border-radius: 10px;
+  background-color: rgb(208.5631578947, 200.3684210526, 145.7368421053);
+  text-align: left;
+}
+.historias-fases .fase h4 {
+  color: #426f20;
+  margin-top: 0;
+  border-bottom: 2px solid #070707;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .historia-fases {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
