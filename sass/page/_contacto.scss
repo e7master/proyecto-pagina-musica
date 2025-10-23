@@ -1,0 +1,28 @@
+@use "../generales/variable" as *;
+@use "../generales/mixins" as *;
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado * 1.5;
+    max-width: 500px;
+    margin: 40px auto;
+    input, textarea{
+        padding: $espaciado;
+        border: 1px solid #0a0a0a;
+        border-radius: 8px;
+        font-size: 16px;
+        &:focus{
+            border-color: $dorado;
+            box-shadow: 0 0 5px $dorado;
+        }
+    }
+    button{
+        @include boton($negro, rgb(255, 255, 255));
+    }
+}
+
+.fondo-contacto{
+    background-color: lighten($beige, 8%);
+    border: 1px solid #000;
+}

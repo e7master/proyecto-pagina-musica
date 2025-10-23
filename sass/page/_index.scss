@@ -1,0 +1,103 @@
+@use "../generales/variable" as *;
+@use "../generales/mixins" as *;
+
+.banner {
+    text-align: center;
+    background-image: url(../medios/banner.jpeg);
+    text-shadow: $negro 1px 1px 8px;
+    height: 20vh;
+    padding-top: 35px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .titulo{
+       color: #c1b70b; 
+       animation: aparecer 2s ease-in-out;
+    }
+}
+
+@keyframes aparecer{
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: $beige;
+    color: #000;
+    border: 1px solid darken($beige, 15%);
+    text-align: center
+}
+
+.lugar{
+    @include centrado-flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+        display: block;
+        &:hover{
+        transform: scale(1.03);
+        }
+    }
+    .media{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+    iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    }
+    .texto {
+        flex: 1;
+        background-color: #9e97385f;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        p{
+            text-align: justify;
+            line-height: 1.6;
+        }
+    }
+}
+@include responsive(768px){
+    .lugar{
+        flex-direction: column;
+        .media, .texto {
+            width: 100%;
+        }
+    }
+}
+
+.flotar{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}

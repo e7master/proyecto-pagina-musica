@@ -1,0 +1,30 @@
+@use "./variable" as*;
+
+@mixin centrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boton($color-fondo, $color-texto){
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: $espaciado * 1.2 $espaciado * 2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: lighten($color-fondo, 10%);
+    }
+}
+
+@mixin responsive($max-width){
+    @media (max-width: $max-width){
+        @content;
+    }
+}
+
+
+

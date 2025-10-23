@@ -1,0 +1,15 @@
+// comentario sass
+
+/*comentario css*/
+
+/*solo @use*/
+@use "./generales/variable";
+@use "./generales/mixins";
+@use "./generales/general";
+@use "./generales/nav";
+@use "./page/index";
+@use "./page/artistas";
+@use "./page/contacto";
+@use "./generales/footer";
+
+

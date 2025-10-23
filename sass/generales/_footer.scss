@@ -1,0 +1,23 @@
+@use "./variable" as *;
+@use "./mixins" as *;
+
+footer {
+    background-color: $negro;
+    padding: 30px;
+    @include centrado-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    p {
+        color: white;
+        font-weight: bold
+    }
+    img {
+        width: 40px;
+        height: auto;
+        transition: transform 0.3s ease;
+        &:hover{
+            transition: rotate(10deg) scale(1.1);
+        }
+    }
+}
+

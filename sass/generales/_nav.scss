@@ -1,0 +1,21 @@
+@use "./variable" as *;
+@use "./mixins" as *;
+
+.logo{
+    width: 100px;
+    height: 90px;
+    margin: 5px;
+}
+
+.fondo-nav{
+    background-color: $negro;
+    a {
+        color:rgb(209, 208, 208);
+        &:hover{
+            color: $dorado;
+            transform: scale(1.01);
+        }
+    }
+}
+
+
