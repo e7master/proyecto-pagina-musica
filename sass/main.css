@@ -29,15 +29,36 @@ html, body {
   transform: scale(1.01);
 }
 
-.banner {
+.banner-rap,
+.banner-trap,
+.banner-cultura {
   text-align: center;
-  background-image: url(/medios/banner.jpeg);
-  text-shadow: #020202 1px 1px 8px;
-  height: 20vh;
-  padding-top: 35px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #020202 1px 1px 8px;
+
+  h1 {
+    color: #c1b70b;
+    font-family: "Manrope", sans-serif;
+    font-weight: 900;
+  }
+}
+
+.banner-rap {
+  background-image: url("../medios/banner.jpeg");
+}
+
+.trap-banner {
+  background-image: url("../medios/banner-trap.jpeg");
+}
+
+.banner-cultura {
+  background-image: url("../medios/banner-hiphop.jpg");
 }
 .banner .titulo {
   color: #c1b70b;
@@ -289,6 +310,10 @@ footer img:hover {
   transition: rotate(10deg) scale(1.1);
 }
 
+.trap-banner {
+  background-image: url("/medios/banner-trap.jpeg");
+}
+
 .tabla-comparativa {
   max-width: 800px;
   margin: 30px auto;
@@ -358,7 +383,7 @@ footer img:hover {
   }
 }
 .banner-cultura {
-  background-image: url("/medios/banner.jpeg");
+  background-image: url("/medios/banner-hiphop.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

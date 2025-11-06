@@ -1,19 +1,26 @@
 @use "../generales/variable" as *;
 @use "../generales/mixins" as *;
 
-.banner {
+.banner-rap {
+    background-image: url("/medios/banner.jpeg");
     text-align: center;
-    background-image: url(/medios/banner.jpeg);
-    text-shadow: $negro 1px 1px 8px;
-    height: 20vh;
-    padding-top: 35px;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    padding: 15px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: $negro;
+    display: flex;
 
     .titulo{
-       color: #c1b70b; 
-       animation: aparecer 2s ease-in-out;
+        color: $dorado; 
+        font-family: $font-secundaria;
+        animation: aparecer 2s ease-in-out;
+        font-weight: 900;
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 6px rgba($negro, 0.8);
     }
 }
 
@@ -101,3 +108,14 @@
         transform: scale(1.1);
     }
 }
+
+@media (max-width: 576px){
+    .banner-rap{
+        height: 25vh;
+        background-size: cover;
+    }
+    .banner-rap .titulo{
+        font-size: 1.3rem;
+    }
+}
+

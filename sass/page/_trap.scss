@@ -4,7 +4,25 @@
 @use "../generales/mixins" as *;
 @use "../generales/footer" as *;
 
+.trap-banner{
+    background-image: url("/medios/banner-trap.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 6px rgba($negro, 0.8); 
 
+    .titulo{
+        color: $dorado;
+        font-family: $font-secundaria;
+        font-weight: 900;
+        animation: aparecer 2s ease-in-out;
+    }
+}
 //tabla comparativa
 
 .tabla-comparativa{
