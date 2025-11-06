@@ -2,7 +2,7 @@
 @use "../generales/mixins" as *;
 
 .banner-rap {
-    background-image: url("/medios/banner.jpeg");
+    background-image: url("../medios/banner.jpeg");
     text-align: center;
     align-items: center;
     justify-content: center;

@@ -30,7 +30,7 @@ html, body {
 }
 
 .banner-rap {
-  background-image: url("/medios/banner.jpeg");
+  background-image: url("../medios/banner.jpeg");
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -322,7 +322,7 @@ footer img:hover {
 }
 
 .trap-banner {
-  background-image: url("/medios/banner-trap.jpeg");
+  background-image: url("../medios/banner-trap.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -465,7 +465,7 @@ footer img:hover {
 }
 
 .banner-cultura {
-  background-image: url("/medios/banner-hiphop.jpg");
+  background-image: url("../medios/banner-hiphop.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
