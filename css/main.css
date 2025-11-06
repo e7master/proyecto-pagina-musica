@@ -47,8 +47,24 @@ html, body {
   font-family: "Manrope", sans-serif;
   animation: aparecer 2s ease-in-out;
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 6px rgba(2, 2, 2, 0.8);
+}
+
+h2 {
+  font-family: "Bungee", sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: #020202;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Chocolate Classical Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #020202;
+  text-transform: uppercase;
 }
 
 @keyframes aparecer {
@@ -392,6 +408,62 @@ footer img:hover {
     grid-template-columns: 1fr;
   }
 }
+.galeria-trap {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  background: linear-gradient(180deg, rgba(207, 190, 37, 0.568627451) 0%, rgba(53, 46, 2, 0.7529411765) 100%);
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+.galeria-trap h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.galeria-trap p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+#carruselTrap {
+  display: block;
+  margin: 10px auto;
+  padding: 0;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(2, 2, 2, 0.6);
+}
+#carruselTrap img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  object-fit: contain;
+  background-color: #000;
+}
+#carruselTrap .carousel-control-prev-icon,
+#carruselTrap .carousel-control-next-icon {
+  filter: invert(100%);
+}
+#carruselTrap .carousel-control-prev,
+#carruselTrap .carousel-control-next {
+  width: 5%;
+}
+@media (max-width: 768px) {
+  #carruselTrap {
+    max-width: 100%;
+  }
+  #carruselTrap img {
+    height: 280px;
+  }
+}
+
 .banner-cultura {
   background-image: url("/medios/banner-hiphop.jpg");
   background-position: center;

@@ -19,10 +19,27 @@
         font-family: $font-secundaria;
         animation: aparecer 2s ease-in-out;
         font-weight: 900;
-        font-size: 1.8rem;
+        font-size: 3rem;
         text-shadow: 2px 2px 6px rgba($negro, 0.8);
     }
 }
+
+h2{
+    font-family: $font-titulo;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: $negro;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: $font-texto;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $negro;
+    text-transform: uppercase;
+}
+
 
 @keyframes aparecer{
     from {
